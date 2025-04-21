@@ -1,0 +1,13 @@
+services:
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - 6333:6333
+
+
+
+# services:
+#   qdrant:
+#     image: qdrant/qdrant
+#     ports:
+#       - "6333:6333"
