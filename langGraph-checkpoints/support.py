@@ -7,7 +7,7 @@ from langgraph.checkpoint.mongodb import MongoDBSaver
 from langgraph.types import Command
 load_dotenv()
 
-MONGODB_URI = "mongodb+srv://saurabhkry88:Kz3VmyArgEROuCrR@checkpoints.qvw5sid.mongodb.net/"
+MONGODB_URI = os.getenv("MONGODB_URI")
 config = {"configurable": {"thread_id": "6"}}
 
 def init():
